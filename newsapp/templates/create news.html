@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create News</title>
+</head>
+<body>
+<!-- {{ NewsForm }} -->
+<form method="POST">
+    {% csrf_token %}
+    <fieldset>
+        {{ NewsForm }}
+    </fieldset>
+    <button>Save</button>
+</form>
+
+</body>
+</html>
